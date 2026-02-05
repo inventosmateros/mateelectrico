@@ -47,7 +47,7 @@ const products: Product[] = [
 
 const comparisonData = [
   { feature: 'IDEAL PARA', calabaza: 'Oficina', rutero: 'Vehículos', tripode: 'Casa' },
-  { feature: 'Material exterior', calabaza: 'Acero esmaltado a fuego', rutero: 'Acero esmaltado a fuego negro microtexturado', tripode: 'Polipropileno especial con madera reciclada' },
+  { feature: 'Material exterior', calabaza: 'Acero esmaltado a fuego Blanco Brillante', rutero: 'Acero esmaltado a fuego Negro Microtexturado', tripode: 'Polipropileno especial con madera reciclada' },
   { feature: 'Impermeable 100%', calabaza: true, rutero: false, tripode: false },
   { feature: 'Voltaje', calabaza: '5V USB', rutero: '5V USB', tripode: '5V USB' },
   { feature: 'Carga celular QI', calabaza: true, rutero: false, tripode: false },
@@ -154,21 +154,21 @@ function ComparisonSection() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 mx-auto mb-2 rounded-2xl overflow-hidden bg-zinc-900/50 border border-green-500/30">
-                  <img src="/images/mate-blanco.png" alt="Calabaza" className="w-full h-full object-contain p-2" />
+                  <img src="/images/emate-iled-calabaza.png" alt="Calabaza" className="w-full h-full object-contain p-2" />
                 </div>
                 <p className="text-white font-semibold text-sm">Calabaza</p>
                 <p className="text-green-400 text-xs">iLED</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 mx-auto mb-2 rounded-2xl overflow-hidden bg-zinc-900/50 border border-green-500/30">
-                  <img src="/images/mate-negro.png" alt="Rutero" className="w-full h-full object-contain p-2" />
+                  <img src="/images/rutero-negro.png" alt="Rutero" className="w-full h-full object-contain p-2" />
                 </div>
                 <p className="text-white font-semibold text-sm">Rutero</p>
                 <p className="text-green-400 text-xs">Pro</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 mx-auto mb-2 rounded-2xl overflow-hidden bg-zinc-900/50 border border-orange-500/30">
-                  <img src="/images/mate-marron.jpg" alt="Trípode" className="w-full h-full object-contain p-2" />
+                  <img src="/images/tripode-eco-marron.png" alt="Trípode" className="w-full h-full object-contain p-2" />
                 </div>
                 <p className="text-white font-semibold text-sm">Trípode Eco</p>
                 <p className="text-orange-400 text-xs">Madera</p>
@@ -500,51 +500,67 @@ function App() {
 
       <ComparisonSection />
 
-      <footer className="relative py-16 px-6 border-t border-zinc-800/50">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex items-center gap-3">
-              <Zap className="w-8 h-8 text-green-500" />
-              <span className="text-2xl font-bold text-gradient">E-Mate</span>
-            </div>
-
-            <div className="flex items-center gap-6">
-              <a 
-                href="https://mercadolibre.com.ar/tienda/emate"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2"
-              >
-                Tienda Oficial
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            </div>
-
-           <p className="text-zinc-500 text-sm">
-  © 2019-2026 E-Mate. Todos los derechos reservados.
-</p>
-<p className="text-zinc-500 text-xs mt-2">
-  Mate Eléctrico SAS - CUIT 30-71634468-8
-</p>
-<div className="pt-8 mt-8 border-t border-zinc-900/50">
-  <p className="text-zinc-500 text-sm">
-    Desarrollado por:{" "}
-    <a 
-      href="https://inventosargentinos.com" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="text-green-400 hover:text-green-300 transition-colors font-medium decoration-zinc-800 underline-offset-4 hover:underline"
-    >
-      InventosArgentinos.com
-    </a>
-  </p>
-  <p className="text-zinc-600 text-[10px] uppercase tracking-[0.2em] mt-2">
-    Innovación & Propiedad Intelectual
-  </p>
-</div>
-          </div>
+ <footer className="relative py-20 px-6 border-t border-zinc-900/50 bg-black">
+  <div className="max-w-6xl mx-auto">
+    {/* Primera Fila: 3 Columnas */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start text-center md:text-left">
+      
+      {/* Columna 1: Branding */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-center md:justify-start gap-3">
+          <Zap className="w-8 h-8 text-green-500" />
+          <span className="text-2xl font-bold text-gradient">E-Mate</span>
         </div>
-      </footer>
+        <p className="text-zinc-500 text-sm leading-relaxed">
+          Innovación argentina aplicada al ritual de siempre.
+        </p>
+      </div>
+
+      {/* Columna 2: Enlaces Rápidos */}
+      <div className="space-y-4">
+        <h4 className="text-white font-semibold uppercase text-xs tracking-widest">Tienda</h4>
+        <a 
+          href="https://mercadolibre.com.ar/tienda/emate"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-zinc-400 hover:text-green-400 transition-colors flex items-center justify-center md:justify-start gap-2 text-sm"
+        >
+          Tienda Oficial Mercado Libre
+          <ExternalLink className="w-3 h-3" />
+        </a>
+      </div>
+
+      {/* Columna 3: Legal */}
+      <div className="space-y-2">
+        <h4 className="text-white font-semibold uppercase text-xs tracking-widest mb-4">Legal</h4>
+        <p className="text-zinc-500 text-xs">
+          © 2019-2026 E-Mate. <br/> Todos los derechos reservados.
+        </p>
+        <p className="text-zinc-500 text-xs font-mono">
+          Mate Eléctrico SAS <br/> CUIT 30-71634468-8
+        </p>
+      </div>
+    </div>
+
+    {/* Segunda Fila: Créditos (InventosArgentinos.com) */}
+    <div className="mt-16 pt-8 border-t border-zinc-900/50 flex flex-col items-center gap-2">
+      <p className="text-zinc-500 text-sm">
+        Desarrollado por:{" "}
+        <a 
+          href="https://inventosargentinos.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-green-400 hover:text-green-300 transition-colors font-medium decoration-zinc-800 underline-offset-4 hover:underline"
+        >
+          InventosArgentinos.com
+        </a>
+      </p>
+      <p className="text-zinc-600 text-[10px] uppercase tracking-[0.3em]">
+        Innovación & Propiedad Intelectual
+      </p>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }
