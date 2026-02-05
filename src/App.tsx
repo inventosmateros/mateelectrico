@@ -15,30 +15,30 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: 'E-Mate Calabaza',
+    name: 'E·Mate Calabaza',
     subtitle: 'iLED Edition',
-    description: 'El mate eléctrico más vendido. Diseño clásico con tecnología de última generación. Luz LED verde que indica cuando tu mate está listo.',
-    image: '/images/mate-blanco.png',
+    description: 'Innovación total en tu escritorio. El E-Mate Inductivo es el primer sistema de mate que cuida tu infusión y tu tecnología. Su base de carga inalámbrica es compatible con smartphones, permitiéndote cargar tu teléfono mientras descansás del mate. 100% sumergible y seguro, es el compañero tecnológico definitivo.',
+    image: '/images/emate-iled-calabaza.png',
     glowColor: 'green',
     gradientClass: 'bg-gradient-radial',
     priority: 1
   },
   {
     id: 2,
-    name: 'E-Mate Rutero',
+    name: 'E·Mate Rutero',
     subtitle: 'Pro Edition',
-    description: 'Diseño moderno y ergonómico para los amantes del mate en movimiento. Conexión directa para mantener tu mate siempre a la temperatura perfecta.',
-    image: '/images/mate-negro.png',
+    description: 'Tu compañero ideal en la ruta. Olvidate de que el mate se enfríe en medio del viaje. Con un diseño ergonómico pensado para el portavasos de tu auto y conexión directa, el E-Mate Rutero mantiene la yerba a la temperatura exacta desde que salís hasta que llegás',
+    image: '/images/rutero-negro.png',
     glowColor: 'green',
     gradientClass: 'bg-gradient-radial',
     priority: 2
   },
   {
     id: 3,
-    name: 'E-Mate Trípode Eco',
+    name: 'E·Mate Trípode Eco',
     subtitle: 'Madera Edition',
-    description: 'Diseño sustentable en madera natural con patas de acero inoxidable. Luz cálida que crea el ambiente perfecto para disfrutar tu mate.',
-    image: '/images/mate-marron.jpg',
+    description: 'Innovación con conciencia ambiental. El E-Mate Trípode está fabricado con un bioplástico exclusivo de polipropileno y madera reciclada, logrando un diseño sustentable y único. Su luz cálida integrada crea el clima ideal para disfrutar de tu mate, manteniendo siempre la temperatura perfecta con el menor impacto ambiental.',
+    image: '/images/tripode-eco-marron.png',
     glowColor: 'warm',
     gradientClass: 'bg-gradient-radial-warm',
     priority: 3
@@ -70,14 +70,14 @@ const comparisonData = [
 ];
 
 const menuItems = [
-  { label: 'WHATSAPP', href: 'https://wa.me/5491112345678', isWhatsApp: true },
-  { label: 'MAYORISTAS', href: '#' },
-  { label: 'CORPORATIVOS', href: '#' },
-  { label: 'SOPORTE', href: '#' },
-  { label: 'CONTACTO', href: '#' },
-  { label: 'PRENSA', href: '#' },
-  { label: 'DONDE COMPRAR', href: 'https://mercadolibre.com.ar/tienda/emate' },
-  { label: 'MÁS PRODUCTOS', href: '#' },
+  { label: 'WHATSAPP', href: 'https://wa.me/5491122549603', isWhatsApp: true },
+  { label: 'MAYORISTAS', href: '/mayoristas' },
+  { label: 'CORPORATIVOS', href: '/corpo' },
+  { label: 'SOPORTE', href: '/soporte' },
+  { label: 'CONTACTO', href: '/contacto' },
+  { label: 'PRENSA', href: 'prensa' },
+  { label: 'DONDE COMPRAR', href: '/tiendas' },
+  { label: 'MÁS PRODUCTOS', href: 'https://mercadolibre.com.ar/tienda/emate' },
 ];
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -360,7 +360,7 @@ function App() {
             <Zap className="w-10 h-10 text-green-500" />
           </div>
           <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-2">
-            <span className="text-gradient">E-Mate</span>
+            <span className="text-gradient">E·Mate</span>
           </h1>
           <p className="text-xl md:text-2xl text-zinc-400 font-light tracking-wide">
             Mate Eléctrico
@@ -520,9 +520,28 @@ function App() {
               </a>
             </div>
 
-            <p className="text-zinc-500 text-sm">
-              © 2025 E-Mate. Todos los derechos reservados.
-            </p>
+           <p className="text-zinc-500 text-sm">
+  © 2019-2026 E-Mate. Todos los derechos reservados.
+</p>
+<p className="text-zinc-500 text-xs mt-2">
+  Mate Eléctrico SAS - CUIT 30-71634468-8
+</p>
+<div className="pt-8 mt-8 border-t border-zinc-900/50">
+  <p className="text-zinc-500 text-sm">
+    Desarrollado por:{" "}
+    <a 
+      href="https://inventosargentinos.com" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-green-400 hover:text-green-300 transition-colors font-medium decoration-zinc-800 underline-offset-4 hover:underline"
+    >
+      InventosArgentinos.com
+    </a>
+  </p>
+  <p className="text-zinc-600 text-[10px] uppercase tracking-[0.2em] mt-2">
+    Innovación & Propiedad Intelectual
+  </p>
+</div>
           </div>
         </div>
       </footer>
