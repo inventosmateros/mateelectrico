@@ -71,12 +71,12 @@ const comparisonData = [
 
 const menuItems = [
   { label: 'WHATSAPP', href: 'https://wa.me/5491122549603', isWhatsApp: true },
-  { label: 'MAYORISTAS', href: '/mayoristas' },
-  { label: 'CORPORATIVOS', href: '/corpo' },
-  { label: 'SOPORTE', href: '/soporte' },
-  { label: 'CONTACTO', href: '/contacto' },
-  { label: 'PRENSA', href: 'prensa' },
-  { label: 'DONDE COMPRAR', href: '/tiendas' },
+  { label: 'MAYORISTAS', href: '/https://wa.me/5491122549603?text=Hola,%20quisiera%20saber%20como%20comprar%20emates%20al%20mayor%20para%20vender%20en%20mi%20comercio.' },
+  { label: 'CORPORATIVOS', href: '/https://wa.me/5491122549603?text=Hola,%20quisiera%20mates%20corporativos%20para%20merchandising.%0AEl%20modelo%20que%20me%20interesa%20es%20el:%20_______%0ALa%20cantidad%20a%20cotizar:%20_________________%0ACon%20o%20sin%20logo?%20______%0AFecha%20estimada%20de%20entrega:%20___________%0AMi%20mail%20para%20enviar%20el%20presupuesto%20formal%20es:%20______' },
+  { label: 'SOPORTE', href: 'https://wa.me/5491122549603?text=Necesito%20soporte%20tecnico,%20tengo%20un%20problema%20con%20mi%20mate.' },
+  { label: 'CONTACTO', href: 'https://wa.me/5491122549603?text=Por%20el%20momento%20pod%C3%A9s%20escribirnos%20por%20este%20canal%20de%20whatsapp%20o%20al%20mail%20hola@mateelectrico.com' },
+  { label: 'PRENSA', href: 'https://wa.me/5491122549603' },
+  { label: 'DONDE COMPRAR', href: '/https://wa.me/5491122549603?text=Hola,%20vivo%20en%20______________%0AQuisiera%20saber%20en%20que%20tienda%20cercana%20puedo%20conseguir%20sus%20emates' },
   { label: 'MÁS PRODUCTOS', href: 'https://mercadolibre.com.ar/tienda/emate' },
 ];
 
