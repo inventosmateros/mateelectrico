@@ -44,29 +44,29 @@ const products: Product[] = [
     priority: 3
   }
 ];
-
-const comparisonData = [
-  { feature: 'IDEAL PARA', calabaza: 'Oficina', rutero: 'Vehículos', tripode: 'Casa' },
-  { feature: 'Material exterior', calabaza: 'Acero esmaltado a fuego Blanco Brillante', rutero: 'Acero esmaltado a fuego Negro Microtexturado', tripode: 'Polipropileno especial con madera reciclada' },
+const comparisonData = [ 
+  { feature: 'IDEAL PARA', calabaza: 'Oficina', rutero: 'Vehículos', tripode: 'Casa' }, 
+  { feature: 'Material exterior', calabaza: 'Acero esmaltado a fuego Blanco Brillante', rutero: 'Acero esmaltado a fuego Negro Microtexturado', tripode: 'Polipropileno especial con madera reciclada' }, 
+  { feature: 'Consumo energético', calabaza: '8W / hora', rutero: '7W / hora', tripode: '6W / hora' }, 
+  { feature: 'Capacidad líquida (sin yerba)', calabaza: '168ml', rutero: '168ml', tripode: '168ml' }, 
+  { feature: 'Carga de yerba seca', calabaza: '35-40g', rutero: '35-40g', tripode: '35-40g' }, 
   { feature: 'Impermeable 100%', calabaza: true, rutero: false, tripode: false },
-  { feature: 'Voltaje', calabaza: '5V USB', rutero: '5V USB', tripode: '5V USB' },
-  { feature: 'Carga celular QI', calabaza: true, rutero: false, tripode: false },
-  { feature: 'Longitud cable', calabaza: '1.2m', rutero: '1m', tripode: '2m' },
-  { feature: 'Interior', calabaza: 'Acero inox 430 apto alimento', rutero: 'Acero inox 430 apto alimento', tripode: 'Acero inox 430 apto alimento' },
-  { feature: 'Bombilla incluida', calabaza: true, rutero: true, tripode: true },
-  { feature: 'Capacidad yerba', calabaza: '125ml', rutero: '125ml', tripode: '125ml' },
-  { feature: 'Capacidad yerba (aprox)', calabaza: '~40g', rutero: '~40g', tripode: '~40g' },
-  { feature: 'Mantiene yerba', calabaza: '24hs', rutero: '24hs', tripode: '24hs' },
-  { feature: 'Calienta agua fría', calabaza: false, rutero: false, tripode: false },
-  { feature: 'Requiere agua a 75°', calabaza: true, rutero: true, tripode: true },
-  { feature: 'Apto PC', calabaza: true, rutero: true, tripode: true },
-  { feature: 'Apto cualquier USB', calabaza: true, rutero: true, tripode: true },
-  { feature: 'Apto AUTO', calabaza: false, rutero: true, tripode: false },
-  { feature: 'Incluye adaptador auto', calabaza: false, rutero: true, tripode: false },
-  { feature: 'Incluye adaptador 220V', calabaza: true, rutero: false, tripode: false },
-  { feature: 'Personalizable', calabaza: 'Sí - Láser (mín. 6u)', rutero: 'No', tripode: 'Sí - Tampografía (mín. 50u)' },
-  { feature: 'Ahorro yerba mensual', calabaza: '~2kg', rutero: '~2kg', tripode: '~2kg' },
-  { feature: 'Garantía', calabaza: '2 años', rutero: '1 año', tripode: '1 año' },
+  { feature: 'Voltaje', calabaza: '5V USB', rutero: '5V USB', tripode: '5V USB' }, 
+  { feature: 'Carga celular QI', calabaza: true, rutero: false, tripode: false }, 
+  { feature: 'Longitud cable', calabaza: '1.2m', rutero: '1m', tripode: '2m' }, 
+  { feature: 'Interior', calabaza: 'Acero inox 430 apto alimento', rutero: 'Acero inox 430 apto alimento', tripode: 'Acero inox 430 apto alimento' }, 
+  { feature: 'Bombilla incluida', calabaza: true, rutero: true, tripode: true }, 
+  { feature: 'Mantiene yerba caliente', calabaza: '24hs', rutero: '24hs', tripode: '24hs' }, 
+  { feature: 'Calienta agua fría', calabaza: false, rutero: false, tripode: false }, 
+  { feature: 'Requiere agua a 75°', calabaza: true, rutero: true, tripode: true }, 
+  { feature: 'Apto PC / Notebook', calabaza: true, rutero: true, tripode: true }, 
+  { feature: 'Apto cualquier USB', calabaza: true, rutero: true, tripode: true }, 
+  { feature: 'Apto AUTO', calabaza: false, rutero: true, tripode: false }, 
+  { feature: 'Incluye adaptador auto', calabaza: false, rutero: true, tripode: false }, 
+  { feature: 'Incluye adaptador 220V', calabaza: true, rutero: false, tripode: false }, 
+  { feature: 'Personalizable', calabaza: 'Sí - Láser (mín. 6u)', rutero: 'No', tripode: 'Sí - Tampografía (mín. 50u)' }, 
+  { feature: 'Ahorro yerba mensual', calabaza: '~2kg', rutero: '~2kg', tripode: '~2kg' }, 
+  { feature: 'Garantía', calabaza: '2 años', rutero: '1 año', tripode: '1 año' }, 
 ];
 
 const menuItems = [
