@@ -190,3 +190,29 @@ body {
 .ring-glow-white {
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
+
+/* Animación combinada: Aparece de abajo + Rebote lateral */
+@keyframes aparecerYRebotar {
+  0% { 
+    opacity: 0;
+    transform: translateY(30px) translateX(0); 
+  }
+  30% { 
+    opacity: 1;
+    transform: translateY(0) translateX(0); 
+  }
+  50% { 
+    transform: translateY(0) translateX(-60px); /* El rebote para avisar que hay más */
+  }
+  70% { 
+    transform: translateY(0) translateX(0); 
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0) translateX(0); 
+  }
+}
+
+.animate-pista-scroll {
+  animation: aparecerYRebotar 3.5s ease-out forwards;
+}

@@ -139,14 +139,9 @@ function ComparisonSection() {
           </p>
         </div>
 
-        <div 
-          className="overflow-x-auto"
-          style={{
-            opacity: isVisible ? 1 : 0,
-            transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-            transition: 'all 0.8s ease 0.2s'
-          }}
-        >
+       <div 
+  className={`overflow-x-auto ${isVisible ? 'animate-pista-scroll' : 'opacity-0'}`}
+>
           <div className="min-w-[800px]">
             <div className="grid grid-cols-4 gap-4 mb-6">
               <div className="text-zinc-500 font-medium text-sm uppercase tracking-wider">
@@ -293,7 +288,10 @@ function App() {
           }
         });
       },
-      { threshold: 0.3, rootMargin: '-50px' }
+      { 
+        threshold: 0.05,    // Se activa apenas se asoma un 5% (antes era 0.3)
+        rootMargin: '50px' // Se activa 150px ANTES de que llegue a la vista (antes era -50px)
+      }
     );
 
     productRefs.current.forEach((ref) => {
