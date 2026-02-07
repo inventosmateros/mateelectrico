@@ -1,6 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { ShoppingBag, Zap, ChevronDown, ExternalLink, Menu, X, Check, Minus } from 'lucide-react';
 
+const mlLinks: Record<string | number, string> = {
+  calabaza: "https://www.mercadolibre.com.ar/mate-electrico-inductivo-led-con-base-color-blanco-calabaza/p/MLA54176105", 
+  rutero: "https://www.mercadolibre.com.ar/mate-electrico-rutero-led--emate-auto--tienda-oficial/up/MLAU3676871796",   
+  tripode: "https://mercadolibre.com.ar/tienda/emate",
+  1: "https://www.mercadolibre.com.ar/mate-electrico-inductivo-led-con-base-color-blanco-calabaza/p/MLA54176105", 
+  2: "https://www.mercadolibre.com.ar/mate-electrico-rutero-led--emate-auto--tienda-oficial/up/MLAU3676871796",
+  3: "https://mercadolibre.com.ar/tienda/emate"
+};
+
 interface Product {
   id: number;
   name: string;
@@ -194,24 +203,25 @@ function ComparisonSection() {
               ))}
             </div>
 
-            <div className="grid grid-cols-4 gap-4 mt-6 pt-6 border-t border-zinc-800">
-              <div className="text-zinc-500 font-medium text-sm flex items-center">
-                Precio
-              </div>
-              {['calabaza', 'rutero', 'tripode'].map((model) => (
-                <div key={model} className="text-center">
-                  <a
-                    href="https://mercadolibre.com.ar/tienda/emate"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-green-400 hover:text-green-300 text-sm font-medium transition-colors"
-                  >
-                    Ver en ML
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-4 gap-4 mt-6 pt-6 border-t border-zinc-800">
+  <div className="text-zinc-500 font-medium text-sm flex items-center">
+    Precio
+  </div>
+  {['calabaza', 'rutero', 'tripode'].map((model) => (
+    <div key={model} className="text-center">
+      <a
+        // Aquí es donde sucede la magia: busca el link en el objeto usando el nombre del modelo
+        href={mlLinks[model as keyof typeof mlLinks]} 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-1 text-green-400 hover:text-green-300 text-sm font-medium transition-colors"
+      >
+        Ver en ML
+        <ExternalLink className="w-3 h-3" />
+      </a>
+    </div>
+  ))}
+</div>
           </div>
         </div>
       </div>
@@ -380,7 +390,7 @@ function App() {
           className="relative z-10 btn-iphone flex items-center gap-2"
         >
           <ShoppingBag className="w-5 h-5" />
-          Comprar en Mercado Libre
+          Ver en Mercado Libre
           <ExternalLink className="w-4 h-4" />
         </a>
 
@@ -479,15 +489,15 @@ function App() {
                     </div>
 
                     <a
-                      href="https://mercadolibre.com.ar/tienda/emate"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 btn-iphone mt-4"
-                    >
-                      <ShoppingBag className="w-5 h-5" />
-                      Comprar Ahora
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
+  href={mlLinks[product.id]} // <-- CAMBIÁ EL HREF POR ESTO
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 btn-iphone mt-4"
+>
+  <ShoppingBag className="w-5 h-5" />
+  Ver en ML
+  <ExternalLink className="w-4 h-4" />
+</a>
                   </div>
                 </div>
               </div>
